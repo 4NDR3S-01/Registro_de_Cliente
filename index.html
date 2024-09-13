@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cliente</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Cliente</h1>
+    </header>
+    <div class="contenedor-principal">
+        <form id="cliente-form" action="saludo.html" method="get">
+            <div>
+                <label for="cedula">Cédula:</label>
+                <input type="text" name="cedula" id="cedula" placeholder="Ej: 1234567890" required>
+            </div>
+            <div class="nombres-apellidos">
+                <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Ej: Cabrera" required>
+                </div>
+                <div>
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" name="nombres" id="nombres" placeholder="Ej: William" required>
+                </div>
+            </div>
+            <div>
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="direccion" id="direccion" placeholder="Ej: Calle 321" required>
+            </div>
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Ej: 0987654321" required>
+            </div>
+            <div>
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo" id="correo" placeholder="Ej: ejemplo@dominio.com" required>
+            </div>
+            <div>
+                <label for="ciudad">Ciudad:</label>
+                <select name="ciudad" id="ciudad" required>
+                    <option value="" disabled selected>Selecciona una ciudad</option>
+                    <option value="ciudad1">Machala</option>
+                    <option value="ciudad2">Quito</option>
+                    <option value="ciudad3">Cuenca</option>
+                    <option value="ciudad4">Guayaquil</option>
+                    <option value="ciudad5">Manta</option>
+                </select>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>    
+    </div>
+    <footer>
+        <p>Hecho con ❤️ por <a href="https://william-cabrera.me">William Cabrera</a>.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
